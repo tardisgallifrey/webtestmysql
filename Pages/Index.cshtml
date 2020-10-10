@@ -1,0 +1,19 @@
+@page
+@model webtestmysql.Pages.Index.IndexModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h1>Welcome to the Page of Cars</h1>
+
+<a asp-page="./Another/Different" >Link to a Different Page</a>
+
+<p>Enter a Car name and price:</p>
+
+<form method="post">
+    Name:
+    <input asp-for="Cars.Name" />
+    <br>
+    Price:
+    <input asp-for="Cars.Price" />
+    <br>
+    <input type="submit" />
+</form>
